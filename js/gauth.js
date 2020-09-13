@@ -128,7 +128,7 @@
             // Check if local storage is supported
             if (storageService.isSupported()) {
                 if (!storageService.getObject('accounts')) {
-                    addAccount('alice@google.com', 'JBSWY3DPEHPK3PXP');
+                    addAccount('Add a key by pressing the button on the top right. (Default Account.)', 'JBSWY3DPEHPK3PXP');
                 }
 
                 updateKeys();
