@@ -1,9 +1,9 @@
 <!DOCTYPE html public "Gerard Braad"> 
 <html manifest="cache.manifest">
     <head>
-        <title>GAuth</title>
+        <title>Badbird-5907 > Auth</title>
         <meta charset="utf-8">
-        <meta name="description" content="GAuth Authenticator">
+        <meta name="description" content="TOTP Authenticator By Badbird5907">
         <meta name="HandheldFriendly" content="True">
         <meta http-equiv="cleartype" content="on">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
@@ -28,9 +28,10 @@
         <section data-role="panel" id="panel" data-position="left" data-theme="a" data-display="overlay">
             <ul data-role="listview">
                 <li><a id="panelheader" href="#main" data-rel="close">&nbsp;</a></li>
-                <li data-l10n-id="menu-keys" data-icon="lock"><a href="#main" data-rel="close">Keys</a></li>
-                <li data-l10n-id="menu-settings" data-icon="gear"><a href="#settings" data-rel="close">Settings</a></li>
-                <li data-l10n-id="menu-about" data-icon="info"><a href="#about" data-rel="close">About</a></li>
+                <li data-l10n-id="menu-keys" data-icon="lock"><a id="panel-keys" href="#main" data-rel="close">Keys</a></li>
+                <li data-l10n-id="menu-settings" data-icon="gear"><a id="panel-settings" href="#settings" data-rel="close">Settings</a></li>
+                <li data-l10n-id="menu-about" data-icon="info"><a id="panel-about" href="#about" data-rel="close">About</a></li>
+				<li data-l10n-id="menu-home" data-icon="home"><a id="panel-main-site" href="https://Badbird5907.net" data-rel="close">Main Site</a></li>
             </ul>
         </section>
 
@@ -49,13 +50,11 @@
                 <a id="addButton" data-l10n-id="keys-add" href="#add" data-role="button" class="ui-btn ui-icon-plus ui-btn-icon-left">Add</a>
             </div>
             <footer data-role="footer">
-                <h1>@gbraad</h1>
             </footer>
         </section>
 
         <section data-role="page" id="add" data-theme="a">
             <header data-role="header">
-                <h1 data-l10n-id="title-add">Add account</h1>
                 <a href="#panel" class="header-icon" data-l10n-id="header-menu" data-role="button" data-iconpos="notext" data-icon="bars" data-iconpos="notext">Menu</a>
             </header>
             <div data-role="content">
@@ -78,7 +77,7 @@
 
         <section data-role="page" id="settings" data-theme="a">
             <header data-role="header">
-                <h1 data-l10n-id="title-settings">Settings</h1>
+                <h1 data-l10n-id="title-settings">Badbird5907 > Auth > Settings</h1>
                 <a data-l10n-id="header-menu" href="#panel" class="header-icon" data-role="button" data-iconpos="notext" data-icon="bars" data-iconpos="notext">Menu</a>
             </header>
             <div data-role="content">
@@ -90,7 +89,7 @@
 
         <section data-role="page" id="about" data-theme="a">
             <header data-role="header">
-                <h1 data-l10n-id="title-about">About</h1>
+                <h1 data-l10n-id="title-about">Badbird5907 > Auth > About</h1>
                 <a href="#panel" class="header-icon" data-l10n-id="header-menu" data-role="button" data-iconpos="notext" data-icon="bars" data-iconpos="notext">Menu</a>
             </header>
             <div data-role="content">
@@ -100,6 +99,7 @@
                     <li>Source code:<br/><a target=”_blank” href="http://github.com/gbraad/gauth/">https://github.com/Badbird-5907/gauth</a></li></br>
                     <li><a target=”_blank” href="http://blog.tinisles.com/2011/10/google-authenticator-one-time-password-algorithm-in-javascript/">TOTP Algorithm</a></li>
 					</br><li>This Page was forked from <a href="https://github.com/gbraad/gauth/">https://github.com/gbraad/gauth/</li>
+					</br><li>Your secret keys are never transfered to a server and is procesed in your browser.</li>
                 </ul></p>
 	
             </div>
