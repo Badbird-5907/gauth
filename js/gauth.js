@@ -39,6 +39,7 @@
             setObject: setObject
         };
     };
+	
 
     exports.StorageService = StorageService;
 
@@ -165,6 +166,7 @@
 
             $('#edit').click(function() { toggleEdit(); });
             $('#export').click(function() { exportAccounts(); });
+			$('#import').click(function() { importAccounts(); });
         };
 
         var updateKeys = function() {
@@ -208,6 +210,9 @@
             var blob = new Blob([accounts], {type: 'text/plain;charset=utf-8'});
 
             saveAs(blob, 'gauth-export.json');
+        };
+        var importAccounts = function() {
+			alert("This function is still being worked on.");
         };
 
         var deleteAccount = function(index) {
